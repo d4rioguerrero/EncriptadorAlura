@@ -1,0 +1,104 @@
+body {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #e9ecf8;
+}
+h1 {
+  color: #356ea9;
+  font-size: 30px;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.textarea {
+  width: 48%;
+  height: 54vh;
+  border: 5px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  resize: none;
+  font-size: 25px;
+}
+
+.textarea:focus {
+  border: 5px solid #757fb2;
+  outline: none;
+}
+
+footer {
+  background-color: #aab2d5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-button {
+  background-color: #757fb2;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.footer-button:hover {
+  background-color: #f3f5fc;
+  color: #757fb2;
+  box-shadow: 0 0 10px #757fb2;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.footer-button:active {
+  background-color: #757fb2;
+  color: #f3f5fc;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .textarea {
+    width: 95%;
+    height: 21vh;
+  }
+
+  .footer-buttons {
+    flex-direction: column;
+    height: 10%;
+    padding: 10px 20px;
+    gap: 3px;
+  }
+}
+
+.tooltip {
+  position: absolute;
+  font-size: 20px;
+  background-color: #356ea9;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}

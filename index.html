@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+      <h1>Encriptador Alura</h1>
+    </header>
+    <div class="main-content">
+      <textarea
+        class="textarea miTextarea"
+        placeholder="Escribe lo que desees encriptar. 
+Recuerda: sólo minúsculas, no acentos ni caracteres especiales."
+      ></textarea>
+      <textarea
+        class="textarea miTextarea miTextarea2"
+        placeholder="Acá verás el resultado"
+      ></textarea>
+    </div>
+    <div class="footer-buttons">
+      <button class="footer-button" onclick="botonEncriptar()">
+        Encriptar
+      </button>
+      <button class="footer-button" onclick="botonDesencriptar()">
+        Desencriptar
+      </button>
+      <button id="copiar" class="footer-button" onclick="copiar()">
+        Copiar
+      </button>
+    </div>
+    <footer>
+      <p>Darío Guerrero, Alura-Oracle One, 2023.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
